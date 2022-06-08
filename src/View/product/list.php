@@ -7,7 +7,6 @@
     <thead class="table-dark">
       <tr>
         <th>#id</th>
-        <th>categoria</th>
         <th>Nome</th>
         <th>foto</th>
         <th>Descrição</th>
@@ -26,7 +25,6 @@
         extract($product);
         echo "<tr>";
         echo " <td>{$id}</td>";
-        echo " <td>{$category_id}</td>";
         echo " <td>{$name}</td>";
         echo " <td><img width=100px; src='{$photo}' alt=''></td>";
         echo " <td>{$description}</td>";

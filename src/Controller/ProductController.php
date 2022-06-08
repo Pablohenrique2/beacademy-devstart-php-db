@@ -33,7 +33,7 @@ class ProductController extends AbstractController
       $createAt = date('Y-m-d H:i:s');
       $result = $con->prepare(
         "INSERT INTO tb_product (name,description,photo,value,category_id,quantity,create_at)
-      values('{$name}','{$description}','{$photo}','{$value}','{$category}','{$quantity}','{$createAt}')"
+      values('{$name}','{$description}','{$photo}','{$value}','{$category}','{$quantity}','{$createAt}');"
       );
       $result->execute();
       echo "cadastro realizado com sucesso";

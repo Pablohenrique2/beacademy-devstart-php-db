@@ -10,7 +10,7 @@ function createRouter(string $controllerName, string $methodName)
   return ["controller" => $controllerName, 'method' => $methodName];
 }
 $routes = [
-  '/' => createRouter(IndexController::class, "loginAction"),
+  '/' => createRouter(IndexController::class, "indexAction"),
   '/produto' => createRouter(ProductController::class, 'listAction'),
   '/produto/novo' => createRouter(ProductController::class, 'addAction'),
   '/produto/editar' => createRouter(ProductController::class, 'editAction'),

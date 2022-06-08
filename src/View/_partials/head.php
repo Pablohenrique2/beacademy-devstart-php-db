@@ -10,4 +10,4 @@
   <title>Lojinha virtual-admin</title>
 </head>
 
-<body class="container">
+<body class="container" style="background-color:#f1f1f1 ;">
