@@ -42,10 +42,24 @@ class ProductController extends AbstractController
     $result->execute();
     parent::render("product/add", $result);
   }
+  public function removeAction()
+  {
+    $id = $_GET['id'];
+    $con = Connection::getConnection();
+    $result = $con->prepare("DELETE FROM tb_product where id='{$id}'");
+    $result->execute();
+    $mensagem = "Produto excluido";
+    include dirname(__DIR__) . '/View/_partials/mensagem.php';
+  }
 
 
   public function editAction(): void
   {
-    parent::render("product/edit");
+    $id = $_GET['id'];
+    $con = Connection::getConnection();
+    $result = $con->prepare("SELECT * FROM tb_product where id='{$id}'");
+    $result->execute();
+    $data = $result->fetch(\PDO::FETCH_ASSOC);
+    parent::render("product/edit", $data);
   }
 }

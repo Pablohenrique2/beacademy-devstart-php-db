@@ -39,7 +39,8 @@ class CategoryController extends AbstractController
     $query = "DELETE FROM tb_category where id ={$_GET['id']};";
     $result = $con->prepare($query);
     $result->execute();
-    parent::render("category/excluir");
+    $mensagem = "categoria excluida";
+    include dirname(__DIR__) . '/View/_partials/mensagem.php';
   }
   public function editarAction()
   {
