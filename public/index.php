@@ -1,5 +1,7 @@
 <?php
 include "../vendor/autoload.php";
+
+use App\Controller\ErrorController;
 /*
 use App\Connection\Connection;
 
@@ -16,11 +18,6 @@ while ($registros = $preparacao->fetch()) {
 */
 
 
-use App\Controller\ErrorController;
-
-include dirname(__DIR__) . "/src/View/head/head.php";
-include dirname(__DIR__) . '/src/View/menu/nav.php';
-
 $url = explode('?', $_SERVER['REQUEST_URI'])[0];
 $routes = include "../config/Routes.php";
 if (false == isset($routes[$url])) {
@@ -31,4 +28,3 @@ if (false == isset($routes[$url])) {
 $controllerName = $routes[$url]['controller'];
 $methodName = $routes[$url]['method'];
 (new $controllerName())->$methodName();
-include dirname(__DIR__) . "/src/View/footer/footer.php";

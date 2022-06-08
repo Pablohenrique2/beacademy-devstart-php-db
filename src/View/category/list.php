@@ -1,5 +1,3 @@
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <div class="container">
   <h1>list categoria</h1>
 
@@ -22,7 +20,10 @@
         echo " <td>{$id}</td>";
         echo " <td>{$name}</td>";
         echo " <td>{$description}</td>";
-        echo "<td><a href='/categorias/excluir?id={$id}' class='btn btn-danger btn-sm'>Excluir</a></td> ";
+        echo "<td>
+        <a href='/categorias/excluir?id={$id}' class='btn btn-danger btn-sm'>Excluir</a>
+        <a href='/categorias/editar?id={$id}' class='btn btn-warning btn-sm'>Editar</a>
+        </td> ";
         echo "</tr>";
       };
       ?>
