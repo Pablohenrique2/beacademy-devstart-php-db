@@ -32,6 +32,15 @@ class CategoryController extends AbstractController
     }
     parent::render("category/add");
   }
+  public function removeAction(): void
+
+  {
+    $con = Connection::getConnection();
+    $query = "DELETE FROM tb_category where id ={$_GET['id']};";
+    $result = $con->prepare($query);
+    $result->execute();
+    parent::render("category/excluir");
+  }
   public function editAction()
   {
     parent::render("category/edit");
