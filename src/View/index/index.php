@@ -23,13 +23,26 @@
 <style>
   .div-produto {
     display: flex;
-    padding: 24px 16px;
-    ;
+    width: 1100px;
+    overflow-x: scroll;
   }
 
+  .div-produto::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+  }
+
+  .div-produto::-webkit-scrollbar-thumb {
+    background-color: black;
+
+
+  }
+
+
+
   .div-produto-filho {
-    width: 1000;
-    height: 100%;
+    width: 800px;
+    height: 500px;
     background: #fafafa;
     margin-left: 10px;
     border: 5px solid #fafafa;
@@ -38,8 +51,8 @@
   }
 
   .div-produto-filho img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 200px;
+    max-height: 300px;
     padding: 16px;
 
   }

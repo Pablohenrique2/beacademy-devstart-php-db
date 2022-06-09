@@ -32,8 +32,8 @@
         echo " <td> R$ {$value}</td>";
         echo " <td>{$create_at}</td>";
         echo "<td>
-        <a href='/produto/excluir?id={$id}' class='btn btn-danger btn-sm'>Excluir</a>
-        <a href='/produto/editar?id={$id}' class='btn btn-warning btn-sm'>Editar</a>
+        <a href='/produto/excluir?id={$id}' class='btn btn-danger btn-sm mt-2' >Excluir</a>
+        <a href='/produto/editar?id={$id}' class='btn btn-warning btn-sm mt-2' >Editar</a>
         </td> ";
 
         echo "</tr>";
@@ -42,4 +42,3 @@
     </tbody>
 
   </table>
-</div>
