@@ -77,7 +77,7 @@ class ProductController extends AbstractController
       echo "produto atualizado";
     }
 
-    $categories = $con->prepare("SELECT * FROM tb_category where id='{$id}'");
+    $categories = $con->prepare("SELECT * FROM tb_category  ");
     $categories->execute();
 
     $product = $con->prepare("SELECT * FROM tb_product where id='{$id}'");

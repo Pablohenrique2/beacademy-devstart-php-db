@@ -1,14 +1,11 @@
 <h1>editar produto</h1>
 <form action="" method="post">
   <?php
+
   extract($data); ?>
 
   <label for="category">categoria</label>
-  <select name="category" id="category" class="form-select mb-3">
-    <option>--selecione--</option>
-
-  </select><br>
-
+  <input id="category" type="text" value="<?php echo $categories['id'] ?>" name="category" class="form-control mb-3"><br>
 
   <label for=" name">Nome</label>
   <input id="name" type="text" value="<?php echo $product['name'] ?>" name="name" class="form-control mb-3"><br>
