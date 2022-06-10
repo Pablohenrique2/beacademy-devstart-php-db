@@ -2,6 +2,7 @@
   <h1>listar product</h1>
   <div class="mb-3">
     <a href="/produto/novo" class="btn btn-outline-primary">Novo produto</a>
+    <a href="/produto/relatorio" class="btn btn-dark">Gerar pdf</a>
   </div>
   <table class="table table-hover table-striped">
     <thead class="table-dark">

@@ -5,7 +5,7 @@
     <li><img src="https://geek360.com.br/wp-content/uploads/2017/11/melhores-monitores-gamer-1.png" alt=""></li>
   </ul>
 </main>
-<div class="container mt-3">
+<div class="container mt-3 top">
   <div class="text-center mt-4">
     <h1>Categorias em Destaque</h1>
   </div>
@@ -30,7 +30,7 @@
 
   </div>
 
-  <div class="text-center mt-4">
+  <div class="text-center mt-4 ">
     <h2>Produtos em Destaque</h2>
   </div>
   <hr>
@@ -40,16 +40,16 @@
     while ($product = $data->fetch(\PDO::FETCH_ASSOC)) {
       extract($product);
       echo "
-<div class='div-produto-filho' >
+   <div class='div-produto-filho' >
 
-<img  src='{$photo}' alt=''>
-<h3>{$name}</h3>
-<p>{$description}</p>
-<p> R$ {$value}</p>
+     <img  src='{$photo}' alt=''>
+    <h3>{$name}</h3>
+    <p>{$description}</p>
+    <p> R$ {$value}</p>
 
-<a href='' class='btn btn-outline-primary'>Comprar</a>
+    <a href='' class='btn btn-outline-primary'>Comprar</a>
 
-</div>";
+     </div>";
     }; ?>
   </div>
 
