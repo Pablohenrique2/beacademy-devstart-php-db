@@ -3,9 +3,9 @@
 
 ## Funcionalidades
 
-- Cadastro de produros e categorias
-- Edição de produros e categorias
-- Exclusão de produros e categorias
+- Cadastro de produtos e categorias
+- Edição de produtos e categorias
+- Exclusão de produtos e categorias
 - listar produtos
 
 ## Aprendizados
