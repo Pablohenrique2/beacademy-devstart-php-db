@@ -1,5 +1,5 @@
 # beacademy-devstart-php-db
-
+Projeto criado em PHP , foi feito um crud manipulando categorias/produtos utilizando arquitetura MVC e banco de dados;
 
 ## Funcionalidades
 
@@ -12,6 +12,7 @@
 
 - Uso de Bootstrap v5.
 - PHP
+- POO
 -banco de dados.
 
 ## Screenshots
