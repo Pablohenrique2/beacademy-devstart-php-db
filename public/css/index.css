@@ -1,0 +1,95 @@
+
+.carrosel{
+  width: 1349px;
+  height: 400px;
+  overflow: hidden;
+ /* outline: 3px solid black; 
+  
+ box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);*/
+}
+.carrosel ul{
+  display: flex;
+  list-style: none;
+  
+  width: 1400px;
+  height: 400px;
+}
+.carrosel li{
+position: relative;
+animation: slide 30s infinite ease-out;
+
+}
+
+.carrosel img{
+  width: 1400px;
+  height: 400px;
+  margin-left: -35px;
+ 
+ 
+}
+
+@keyframes slide{
+  0%{left: 0px}
+  30%{left: -1400px;}
+  60%{left: -2750px}
+  100%{left: 0px}
+}
+
+.produtos{
+  display: flex;
+  justify-content: center;
+}
+.produtos div {
+  margin-left: 30px;
+}
+.produtos img{
+  width: 200px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.produtos img:hover{
+  width: 300px;
+  
+}
+
+
+.div-produto {
+  display: flex;
+  width: 1100px;
+  overflow-x: scroll;
+}
+
+.div-produto::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+}
+
+.div-produto::-webkit-scrollbar-thumb {
+  background-color: black;
+
+
+}
+
+
+
+.div-produto-filho {
+  width: 800px;
+  height: 500px;
+  background: #fafafa;
+  margin-left: 10px;
+  border: 5px solid #fafafa;
+  border-radius: 4px;
+
+}
+
+.div-produto-filho img {
+  width: 200px;
+  max-height: 300px;
+  padding: 16px;
+
+}
+
+.div-produto-filho h3,
+p {
+  margin-left: 5px;
+}

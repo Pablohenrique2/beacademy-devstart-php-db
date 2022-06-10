@@ -28,3 +28,5 @@ if (false == isset($routes[$url])) {
 $controllerName = $routes[$url]['controller'];
 $methodName = $routes[$url]['method'];
 (new $controllerName())->$methodName();
+?>
+<link rel="stylesheet" href="./css/style.css">

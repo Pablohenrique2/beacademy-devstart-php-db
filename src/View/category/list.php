@@ -1,5 +1,8 @@
 <div class="container">
   <h1>list categoria</h1>
+  <div class="mb-3">
+    <a href="/categorias/nova" class="btn btn-outline-primary">Nova categoria</a>
+  </div>
 
   <table class="table table-hover table-striped">
     <thead class="table-dark">
