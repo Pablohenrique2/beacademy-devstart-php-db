@@ -13,7 +13,7 @@ Projeto criado em PHP , foi feito um crud manipulando categorias/produtos utiliz
 - Uso de Bootstrap v5.
 - PHP
 - POO
--banco de dados.
+- banco de dados.
 
 ## Screenshots
 
