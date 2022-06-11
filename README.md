@@ -19,7 +19,7 @@ Projeto criado em PHP , foi feito um crud manipulando categorias/produtos utiliz
 ## Screenshots
 
 - Tela de home
-  ![home](./public/img/pagina-inicial1.png)
+  ![home](./public/img/pagina-inicial01.png)
   ![](./public/img/pagina-inicial2.png)
   ![](./public/img/pagina-inicial3.png)
 
