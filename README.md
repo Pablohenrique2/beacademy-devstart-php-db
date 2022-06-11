@@ -26,8 +26,8 @@ Projeto criado em PHP , foi feito um crud manipulando categorias/produtos utiliz
 - Tela de listagem de categoria
   ![lista](./public/img/categoria.png)
 
-  - Tela de listagem de categoria
-    ![lista](./public/img/produtos.png)
+- Tela de listagem de produto
+  ![lista](./public/img/produtos.png)
 
 ## Autor
 
