@@ -28,7 +28,8 @@ class CategoryController extends AbstractController
       $con = Connection::getConnection();
       $result = $con->prepare($query);
       $result->execute();
-      echo 'Pronto categoria inserida!!';
+      $mensagem = 'Pronto categoria inserida!!';
+      include dirname(__DIR__) . '/View/_partials/mensagem.php';
     }
     parent::render("category/add");
   }
@@ -52,7 +53,8 @@ class CategoryController extends AbstractController
       $query = "UPDATE tb_category SET name ='{$newName}' , description ='{$newDescripition}' where id ='{$id}'";
       $result = $con->prepare($query);
       $result->execute();
-      echo "categoria atualizada";
+      $mensagem = "categoria atualizada";
+      include dirname(__DIR__) . '/View/_partials/mensagem.php';
     }
     $query = "SELECT * FROM tb_category where id='{$id}'";
     $result = $con->prepare($query);

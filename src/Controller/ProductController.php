@@ -37,7 +37,8 @@ class ProductController extends AbstractController
       values('{$name}','{$description}','{$photo}','{$value}','{$category}','{$quantity}','{$createAt}');"
       );
       $result->execute();
-      echo "cadastro realizado com sucesso";
+      $mensagem = "cadastro realizado com sucesso";
+      include dirname(__DIR__) . '/View/_partials/mensagem.php';
     }
     $result = $con->prepare("SELECT * FROM tb_category");
     $result->execute();
@@ -75,7 +76,8 @@ class ProductController extends AbstractController
        where id='{$id}'";
       $result = $con->prepare($query);
       $result->execute();
-      echo "produto atualizado";
+
+      $mensagem = "produto atualizado";
     }
 
     $categories = $con->prepare("SELECT * FROM tb_category  ");
@@ -83,7 +85,7 @@ class ProductController extends AbstractController
 
     $product = $con->prepare("SELECT * FROM tb_product where id='{$id}'");
     $product->execute();
-
+    include dirname(__DIR__) . '/View/_partials/mensagem.php';
     parent::render("product/edit", [
       'product' => $product->fetch(\PDO::FETCH_ASSOC),
       'categories' => $categories->fetch(\PDO::FETCH_ASSOC),
