@@ -1,4 +1,5 @@
 # beacademy-devstart-php-db
+
 Projeto criado em PHP , foi feito um crud manipulando categorias/produtos utilizando arquitetura MVC e banco de dados;
 
 ## Funcionalidades
@@ -18,11 +19,16 @@ Projeto criado em PHP , foi feito um crud manipulando categorias/produtos utiliz
 ## Screenshots
 
 - Tela de home
-  ![home]()
- 
-- Tela de listagem
-  ![lista]()
-  
- ## Autor
+  ![home](./public/img/pagina-inicial1.png)
+  ![](./public/img/pagina-inicial2.png)
+  ![](./public/img/pagina-inicial3.png)
 
-  [@PabloHenrique🚀]()
+- Tela de listagem de categoria
+  ![lista](./public/img/categoria.png)
+
+  - Tela de listagem de categoria
+    ![lista](./public/img/produtos.png)
+
+## Autor
+
+[@PabloHenrique🚀]()
